@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "Smart Garage",
+      "image": "assets/img/garage.jpg",
+      "slide": "assets/img/garage1.jpg",
+      "category": "Web Developement",
+      "projectDate": "10 April, 2024",
+      "projectURL": "https://github.com/Zerubabel-J/Smart_garage",
+      "description": "Smart Garage is a comprehensive management system designed for auto service centers to streamline their operations, manage employees, customers, orders, vehicles, and services efficiently."
+    },
+    {
+      "name": "Evangadi Community Forum",
+      "image": "assets/img/evangadi_forum.jpg",
+      "slide": "assets/img/evan_forum.jpg",
+      "category": "Web Developement",
+      "projectDate": "25 February, 2024",
+      "projectURL": "https://zerubabel-forum.netlify.app/",
+      "description": "An online platform where users can ask questions, share answers, and engage in discussions. It features user registration, discussion threads, question and answer functionality,  search functionality, and responsive design."
+    },
+    {
+      "name": "Netflix Clone",
+      "image": "assets/img/netflix_3.webp",
+      "images": "assets/img/netflix.jpg",
+      "category": "Web Developement",
+      "projectDate": "05 January, 2024",
+      "projectURL": "https://zerubabelnet.netlify.app/",
+      "description": "Built with React, our Netflix clone delivers a sleek, responsive interface for browsing movies and TV shows. Users can search, watch trailers, and enjoy personalized recommendations with authentication integration. It offers an immersive streaming experience that seems to the original platform"
+    },
+    {
+      "name": "Amazon Clone",
+      "image": "assets/img/amazon.jpg",
+      "image1": "assets/img/amazon1.jpg",
+      "category": "e-commerce",
+      "projectDate": "15 January, 2024",
+      "projectURL": "https://z-amazon-clone.netlify.app",
+      "description": "Our Amazon clone project is a feature-rich e-commerce platform mirroring the functionality of the original site. It boasts a user-friendly interface for browsing, adding to cart, and securely purchasing a wide array of products. Users enjoy a seamless shopping experience, complemented by features like user authentication and other functionalities"
+    }
+  ]
+}
