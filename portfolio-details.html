@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>DevFolio Bootstrap Portfolio Template - Portfolio Details</title>
+    <title>Project Details</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -44,7 +44,7 @@
           if (project) {
             // Populate project details on the page
             $("#project-name").text(project.name);
-            $(".project-img").attr("src", project.image); // Change to class selector
+            $("#project-tech").text(project.techStack);
             $("#project-category").text(project.category);
             $("#project-client").text(project.client);
             $("#project-date").text(project.projectDate);
@@ -52,6 +52,31 @@
               .attr("href", project.projectURL)
               .text(project.projectURL);
             $("#project-description").text(project.description);
+
+            // Populate images in the slider
+            const sliderContainer = $(
+              ".portfolio-details-slider .swiper-wrapper"
+            );
+            sliderContainer.empty(); // Clear existing content
+            project.images.forEach(function (image) {
+              const imgElement = $("<img>")
+                .attr("src", image)
+                .addClass("swiper-slide");
+              sliderContainer.append(imgElement);
+            });
+
+            // Initialize Swiper after updating the slider content
+            new Swiper(".portfolio-details-slider", {
+              loop: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
           }
         });
       });
@@ -62,11 +87,11 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
-        <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+        <h1 class="logo"><a href="index.html">Software Developer</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-        <nav id="navbar" class="navbar">
+        <!-- <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
@@ -100,6 +125,23 @@
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav> -->
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="/">Home</a></li>
+            <li><a class="nav-link scrollto" href="/#about">About</a></li>
+            <li><a class="nav-link scrollto" href="/#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="/#work">Projects</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#blog">Blog</a></li> -->
+            <li class="dropdown">
+              <a href="/#background"
+                ><span>Background</span> <i class="bi"></i
+              ></a>
+            </li>
+
+            <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
       </div>
@@ -108,18 +150,19 @@
 
     <div
       class="hero hero-single route bg-image"
-      style="background-image: url(assets/img/overlay-bg.jpg)"
+      style="background-image: url(assets/img/overlay-bg.jpg); height: 200px"
     >
       <div class="overlay-mf"></div>
       <div class="hero-content display-table">
         <div class="table-cell">
           <div class="container">
-            <h2 class="hero-title mb-4">Portfolio Details</h2>
+            <h3 class="hero-title mb-0" style="font-size: larger">
+              Project Details
+            </h3>
             <ol class="breadcrumb d-flex justify-content-center">
               <li class="breadcrumb-item">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
-              <li class="breadcrumb-item active">Portfolio Details</li>
             </ol>
           </div>
         </div>
@@ -133,37 +176,10 @@
           <div class="row gy-4">
             <div class="col-lg-8">
               <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                  <!-- <div class="swiper-slide">
-                    <img id="project-img" src="/assets/img/garage.jpg" alt="" />
-                  </div> -->
-                  <div class="swiper-slide">
-                    <img
-                      class="project-img"
-                      src=""
-                      alt=""
-                      style="width: 100%; height: 327px; object-fit: cover"
-                    />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img
-                      class="project-img"
-                      src=""
-                      alt=""
-                      style="width: 100%; height: 327px; object-fit: cover"
-                    />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img
-                      class="project-img"
-                      src=""
-                      alt=""
-                      style="width: 100%; height: 327px; object-fit: cover"
-                    />
-                  </div>
-                </div>
+                <div
+                  class="swiper-wrapper align-items-center"
+                  style="width: 100%; height: 327px; object-fit: cover"
+                ></div>
                 <div class="swiper-pagination"></div>
               </div>
             </div>
@@ -177,7 +193,8 @@
                     <span id="project-category"></span>
                   </li>
                   <li>
-                    <strong>Client</strong>: <span id="project-client"></span>
+                    <strong>Tech-Stack</strong>:
+                    <span id="project-tech"></span>
                   </li>
                   <li>
                     <strong>Project date</strong>:
@@ -210,13 +227,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="copyright-box">
-              <p class="copyright">
-                &copy; Copyright <strong>DevFolio</strong>. All Rights Reserved
-              </p>
-              <div class="credits">
-                Designed by
-                <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
+              <div class="credits">Developed by Zerubabel</div>
             </div>
           </div>
         </div>
@@ -224,7 +235,7 @@
     </footer>
     <!-- End  Footer -->
 
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"

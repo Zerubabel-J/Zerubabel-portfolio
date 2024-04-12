@@ -2,35 +2,51 @@
   "projects": [
     {
       "name": "Smart Garage",
-      "image": "assets/img/garage.jpg",
-      "slide": "assets/img/garage1.jpg",
-      "category": "Web Developement",
+      "techStack": "React.js, Express.js, Mysql, Bootstrap",
+      "images": [
+        "assets/img/garage.jpg",
+        "assets/img/10003.jpg",
+        "assets/img/10001_2.jpg"
+      ],
+      "category": "Web Development",
       "projectDate": "10 April, 2024",
       "projectURL": "https://github.com/Zerubabel-J/Smart_garage",
       "description": "Smart Garage is a comprehensive management system designed for auto service centers to streamline their operations, manage employees, customers, orders, vehicles, and services efficiently."
     },
     {
       "name": "Evangadi Community Forum",
-      "image": "assets/img/evangadi_forum.jpg",
-      "slide": "assets/img/evan_forum.jpg",
-      "category": "Web Developement",
+      "techStack": "React.js, Express.js, Mysql, Bootstrap",
+      "images": [
+        "assets/img/evangadi_forum.jpg",
+        "assets/img/evan_forum.jpg",
+        "assets/img/forum_front.JPG"
+      ],
+      "category": "Web Development",
       "projectDate": "25 February, 2024",
       "projectURL": "https://zerubabel-forum.netlify.app/",
-      "description": "An online platform where users can ask questions, share answers, and engage in discussions. It features user registration, discussion threads, question and answer functionality,  search functionality, and responsive design."
+      "description": "An online platform where users can ask questions, share answers, and engage in discussions. It features user registration, discussion threads, question and answer functionality, search functionality, and responsive design."
     },
     {
       "name": "Netflix Clone",
-      "image": "assets/img/netflix_3.webp",
-      "images": "assets/img/netflix.jpg",
-      "category": "Web Developement",
+      "techStack": "React.js, TDBMS, Bootstrap",
+      "images": [
+        "assets/img/netflix.jpg",
+        "assets/img/netflix_2.jpg",
+        "assets/img/netflix_3.webp"
+      ],
+      "category": "Web Development",
       "projectDate": "05 January, 2024",
-      "projectURL": "https://zerubabelnet.netlify.app/",
-      "description": "Built with React, our Netflix clone delivers a sleek, responsive interface for browsing movies and TV shows. Users can search, watch trailers, and enjoy personalized recommendations with authentication integration. It offers an immersive streaming experience that seems to the original platform"
+      "projectURL": "https://zerubabel-forum.netlify.app/",
+      "description": "Built with React, our Netflix clone delivers a sleek, responsive, and user-friendly interface for browsing movies and TV shows. Users can search, watch trailers, and enjoy personalized recommendations with authentication integration. It offers an immersive streaming experience that seems to the original platform."
     },
     {
       "name": "Amazon Clone",
-      "image": "assets/img/amazon.jpg",
-      "image1": "assets/img/amazon1.jpg",
+      "techStack": "React.js, Firbase,Stripe, Bootstrap",
+      "images": [
+        "assets/img/amazon.jpg",
+        "assets/img/amazon1.jpg",
+        "assets/img/amazon_3.jpg"
+      ],
       "category": "e-commerce",
       "projectDate": "15 January, 2024",
       "projectURL": "https://z-amazon-clone.netlify.app",

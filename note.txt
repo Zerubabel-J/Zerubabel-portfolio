@@ -1,0 +1,14 @@
+I've since completed a Fullstack Application Development program at Evangadi, where I gained hands-on experience building web applications using React.js, Express.js, and MySQL. I'm currently working as an IT Technical Support Staff at Bank of Abyssinia, where I provide digital banking operation support. I'm passionate about creating user-friendly web applications that solve real-world problems. I'm excited to collaborate with you on your next project!
+
+
+Greetings! I'm a web developer with a unique background rooted in overcoming adversity. Growing up in an environment where electricity was a luxury, I found my drive for education and technology. My academic journey led me to pursue Electrical and Computer Engineering at Addis Ababa Science and Technology University, where I graduated with very great distinction, honing not only technical skills but also resilience.
+
+In my professional journey, I practice in building user-friendly web applications, using technologies such as React.js, Express.js, Bootstrap, and MySQL. I enjoy working collaboratively in remote settings, continuously honing my skills to tackle diverse challenges.
+
+I'm passionate about leveraging technology to bring ideas to life and am eager to connect with you to discuss how we can work together to achieve your goals. Let's embark on a journey of innovation and success!
+
+
+ Greetings! I'm a  web developer with a passion
+                        for creating user-friendly web applications. I utilize
+                        technologies like React.js, Express.js, Bootstrap, and
+                        MySQL to bring ideas to life.
